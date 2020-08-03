@@ -53,9 +53,29 @@ console.log(allLinks);
 allLinks[0].textContent = siteContent.nav['nav-item-1'];
 allLinks[1].textContent = siteContent.nav['nav-item-2'];
 allLinks[2].textContent = siteContent.nav['nav-item-3'];
-allLinks[3].textContent = siteContent.nav['nav-item-4'];;
+allLinks[3].textContent = siteContent.nav['nav-item-4'];
 allLinks[4].textContent = siteContent.nav['nav-item-5'];
 allLinks[5].textContent = siteContent.nav['nav-item-6'];
+allLinks[0].style.color = 'green';
+allLinks[1].style.color = 'green';
+allLinks[2].style.color = 'green';
+allLinks[3].style.color = 'green';
+allLinks[4].style.color = 'green';
+allLinks[5].style.color = 'green';
+
+const firstLink = document.createElement('a');
+firstLink.textContent = 'Click Me!';
+firstLink.href = '#';
+firstLink.style.color = 'green';
+const nav = document.querySelector('nav');
+nav.prepend(firstLink);
+
+const lastLink = document.createElement('a');
+lastLink.textContent = 'No, Click Me!';
+lastLink.href = '#';
+lastLink.style.color = 'green';
+nav.appendChild(lastLink);
+
 
 // CTA Section
 
