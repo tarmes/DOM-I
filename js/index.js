@@ -56,12 +56,10 @@ allLinks[2].textContent = siteContent.nav['nav-item-3'];
 allLinks[3].textContent = siteContent.nav['nav-item-4'];
 allLinks[4].textContent = siteContent.nav['nav-item-5'];
 allLinks[5].textContent = siteContent.nav['nav-item-6'];
-allLinks[0].style.color = 'green';
-allLinks[1].style.color = 'green';
-allLinks[2].style.color = 'green';
-allLinks[3].style.color = 'green';
-allLinks[4].style.color = 'green';
-allLinks[5].style.color = 'green';
+
+allLinks.forEach(link => {
+  link.style.color = 'green';
+})
 
 const firstLink = document.createElement('a');
 firstLink.textContent = 'Click Me!';
