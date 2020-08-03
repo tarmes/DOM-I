@@ -41,8 +41,12 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// Title
+
 const headTitle = document.querySelector('title');
 headTitle.textContent = 'Great Idea!'
+
+// Nav Bar
 
 const allLinks = document.querySelectorAll('a');
 console.log(allLinks);
@@ -52,3 +56,14 @@ allLinks[2].textContent = siteContent.nav['nav-item-3'];
 allLinks[3].textContent = siteContent.nav['nav-item-4'];;
 allLinks[4].textContent = siteContent.nav['nav-item-5'];
 allLinks[5].textContent = siteContent.nav['nav-item-6'];
+
+// CTA Section
+
+const firstSection = document.querySelector('.cta');
+const firstSectionText = firstSection.querySelector('.cta-text');
+const firstSectionHead = firstSectionText.querySelector('h1');
+const firstSectionButton = firstSectionText.querySelector('button');
+const firstSectionImg = firstSection.querySelector('#cta-img');
+firstSectionHead.textContent = siteContent.cta.h1;
+firstSectionButton.textContent = siteContent.cta.button;
+firstSectionImg.setAttribute('src', siteContent.cta['img-src']);
